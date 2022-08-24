@@ -1,4 +1,13 @@
 #include "binary_trees.h"
+/**
+ * binary_tree_height- If the tree is NULL, return 0. Otherwise,
+ * return the height of the left subtree if it's greater than
+ * the height of the right subtree, otherwise
+ *  return the height of the right subtree
+ * @tree: pointer to the root node of the tree to measure the height.
+ * Return:The height of the tree.
+ */
+
 
 
 size_t binary_tree_height(const binary_tree_t *tree)
