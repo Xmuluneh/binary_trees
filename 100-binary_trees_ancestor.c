@@ -5,7 +5,8 @@
  * @second: pointer to the second node
  * Return: The lowest common ancestor node of the two given nodes.
  */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+const binary_tree_t *second)
 {
 size_t depth_first, depth_second;
 
@@ -35,9 +36,9 @@ size_t depth_first, depth_second;
 	return ((binary_tree_t *)first);
 }
 /**
- * binary_tree_depth -Counts the depth os the node n a BST
+ * binary_tree_depth -Counts the depth of the node of a BST
  * @tree: pointer to the root node of the tree to measure the depth.
- * Return The depth of the binary tree.
+ * Return:The depth of the binary tree.
  */
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
