@@ -7,7 +7,7 @@
  */
 void bal(avl_t **tree)
 {
-	int bval;
+int bval;
 
 	if (tree == NULL || *tree == NULL)
 		return;
@@ -28,7 +28,7 @@ void bal(avl_t **tree)
  */
 int successor(bst_t *node)
 {
-	int left = 0;
+int left = 0;
 
 	if (node == NULL)
 	{
@@ -52,7 +52,7 @@ int successor(bst_t *node)
  */
 int remove_type(bst_t *root)
 {
-	int new_value = 0;
+int new_value = 0;
 
 	if (!root->left && !root->right)
 	{
@@ -99,7 +99,7 @@ int remove_type(bst_t *root)
  */
 bst_t *bst_remove(bst_t *root, int value)
 {
-	int type = 0;
+int type = 0;
 
 	if (root == NULL)
 		return (NULL);
@@ -126,7 +126,7 @@ bst_t *bst_remove(bst_t *root, int value)
  */
 avl_t *avl_remove(avl_t *root, int value)
 {
-	avl_t *root_a = (avl_t *) bst_remove((bst_t *) root, value);
+avl_t *root_a = (avl_t *) bst_remove((bst_t *) root, value);
 
 	if (root_a == NULL)
 		return (NULL);
